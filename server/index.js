@@ -9,6 +9,7 @@ const { default: axios } = require("axios");
 const userRoute = require("./route/user.route");
 const selectedRoute = require("./route/selected.route");
 const searchRoute = require("./route/search.route");
+const { getNewAccessToken } = require("./cronjob/access-token");
 connectDb();
 
 app.use(express.urlencoded({ extended: true }));
@@ -57,6 +58,8 @@ app.get("/", async (req, res) => {
 //       res.status(500).send("Error fetching access token");
 //     });
 // });
+
+getNewAccessToken()
 
 app.use("/user", userRoute);
 app.use("/selected", selectedRoute);
