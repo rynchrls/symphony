@@ -11,9 +11,6 @@ function Navigation({ setOpen, mobile }) {
       title: "Album",
     },
     {
-      title: "Artist",
-    },
-    {
       title: "Playlist",
     },
     {
@@ -60,7 +57,7 @@ function Navigation({ setOpen, mobile }) {
           }}
           onClick={() => {
             setOpen(false);
-            navigate(`/${obj.title?.toLowerCase()}`, { replace: true });
+            navigate(`/${obj?.title?.toLowerCase()}`, { replace: true });
           }}
         >
           {obj.title}
