@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-container:hover .play-icon  {
+  opacity: 1;
+  transition: .1s ease;
+}
+.image-container:hover .img {
+    opacity: .6;
+}
+.img {
+    opacity: 1;
+    border-radius: 6px;
+}

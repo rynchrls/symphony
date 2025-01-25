@@ -1,0 +1,112 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: auto;
+    position: relative
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius:6px;
+    cursor: pointer;
+  
+    /* Center slide text vertically */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  
+
+  .swiper-button-next,
+.swiper-button-prev {
+  color: #008080; /* Change the color of the arrows */
+  opacity: 1; /* Ensure the arrows are fully visible */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #00808093; /* Optional: Change the color on hover */
+}
+
+
+.slanted-button {
+  z-index: 222;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(25, 25, 25);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.slanted-button:hover {
+  background-color: rgb(25, 25, 25);
+  color: #fff;
+  transform: translateX(-50%) translateY(140%) scale(1.1);/* Slightly enlarges on hover */
+}
+
+@media (max-width: 700px) {
+  .slanted-button {
+    padding: 6px 16px;
+    font-size: 10px;
+    transform: translateX(-50%) translateY(125%);
+  }
+  .slanted-button:hover {
+    transform: translateX(-50%) translateY(125%) scale(1.1);/* Slightly enlarges on hover */
+  }
+  
+}
