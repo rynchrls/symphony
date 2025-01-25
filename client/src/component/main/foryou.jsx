@@ -133,7 +133,7 @@ function ForYou({ desktop, mobile }) {
                   opacity={0}
                   style={{
                     position: "absolute",
-                    bottom: 70,
+                    top: 20,
                     right: 20,
                   }}
                   className="play-icon"
