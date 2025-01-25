@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import store from "./store/store.js";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://symphony-82vd.onrender.com";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
