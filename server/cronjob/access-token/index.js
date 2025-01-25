@@ -19,7 +19,7 @@ const authOptions = {
 
 const getNewAccessToken = async () => {
   // Set up the cron job to run every 50 minutes
-  cron.schedule("* * * * *", () => {
+  cron.schedule("*/45 * * * *", () => {
     refreshAccessToken();
   });
 };
